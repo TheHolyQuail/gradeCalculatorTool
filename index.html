@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grade Claculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="script.js"></script>
+        <link rel=stylesheet href="style.css">
+    </head>
+
+    <body background="background3.jpg" onload="setUpPage()">
+
+        <div id="header">
+            <h1 id="title">Grade Calculator</h1>
+            <p class="text-monospace" id="error"></p>
+            <div id="start">
+                <p id="instructions">to start press start</p>
+                <button type="button" class="btn btn-outline-warning" id="startButton" onclick="start()">START</button>
+            </div>
+
+        </div>
+
+        <div id="container">
+
+            <div id="noFin">
+
+                <div id="tableDiv">
+                    <table id="mainTable"></table>
+                </div>
+
+
+                <input type="text" id="newCategory" size="40px">
+
+                <button type="button" class="btn btn-outline-primary btn-sm" id="newSection" onclick="addRow()">new category</button>
+
+                <p class="text-monospace" id="gradeW/FinPercentage"></p>
+                <p class="text-monospace" id="gradeW/FinText"></p>
+
+
+                <div id="dividerA">
+                <button type="button" class="btn btn-light" onclick="noFinalGradeCalculation()">calculate current grade</button>
+                </div>
+
+            </div>
+            <div id="final">
+
+                <div id="dividerFin">
+                    <table id="finalsTable"></table>
+                </div>
+
+                <div id="dividerB">
+                    <button type="button" class="btn btn-light" onclick="calculateFinal()">calculate needed final exam/project grade</button>
+
+                    <p class="text-monospace" id="neededGrade"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,57 @@
+.blue {
+    background: #3cb5ff;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.finalTable {
+    background: gold;
+}
+
+.final {
+    padding-bottom: 3%;
+}
+
+body {
+    cursor: pointer;
+    text-align: center;
+}
+
+#header{
+    color: aqua;
+}
+
+button{
+    cursor: cell;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container{
+
+}
+
+#dividerA{
+    padding-bottom: 1%;
+}
+
+#dividerB{
+    padding-top: 1%;
+}
+
+p, #noFin{
+    color: whitesmoke;
+}
+
+#error{
+    color: red;
+}
+
+#neededGrade{
+    padding-top: 1%;
+}
